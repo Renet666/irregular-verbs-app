@@ -1,0 +1,43 @@
+
+<div id="cards-container">
+    <div id="cards-box">
+        <div id="carousel-container">
+            <ul id="slides">
+                {% for obj in verbs %}
+                <li class="slide"  data-past="{{ obj.past_simple }}" data-participle="{{ obj.past_participle }}">{{ obj.infinitive }}</li>
+                {% endfor %}
+                <li class="slide">
+                    <div id="end-box">
+                        <button id="play-again-btn" class="btn">Play Again</button>
+                    </div>
+                </li>
+       
+            </ul>
+        </div>
+        <div id="score-box">scores</div>
+    </div>
+    <div id="answer-box">
+        <div class="input-container">
+            <input type="text" class="input-verb" id="past" placeholder="Past" autocomplete="off"  data-past="false" data-type ='past' autofocus>
+            <span id="span-past" data-past>&#10004;</span>
+        </div>
+        <div class="input-container">
+            <input type="text" class="input-verb" id="participle" placeholder="Past participle" autocomplete="off" data-participle="false" data-type="participle">
+            <span id="span-participle" data-participle="">&#10004;</span>
+        </div>
+    </div>
+
+    <div id="footer-cards">
+        <button id="carousel-button-next"  class="btn">
+            Next 
+        </button>
+    </div>
+
+</div>
+
+
+
+
+
+
+

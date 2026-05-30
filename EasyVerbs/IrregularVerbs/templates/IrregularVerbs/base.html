@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'IrregularVerbs/style.css' %}">
+    <script src="{% static 'IrregularVerbs/main.js' %}" type="module"></script>  
+
+    {% load livereload_tags %}
+    {% livereload_script %}
+
+    <title>EasyVerbs</title>
+    
+</head>
+<body>
+    {% include 'IrregularVerbs/navbar.html' %}
+
+    {% block content %}
+    
+    {% endblock  %}
+
+</body>
+</html>

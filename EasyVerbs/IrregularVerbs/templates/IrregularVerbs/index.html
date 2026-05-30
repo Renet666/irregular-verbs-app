@@ -1,0 +1,22 @@
+{% extends 'IrregularVerbs/base.html' %}
+
+{% block content %}
+
+<div id="container">
+    <div >
+        <div class="verb-box">
+            <a href="{% url 'all_verbs' %}">All Irregular Verbs</a>  
+        </div>
+        <div class="verb-box">
+            <a href="{% url 'beginner_verbs' %}">beginner verbs</a>
+        </div>
+        <div class="verb-box">
+            <a href="{% url 'intermediate_verbs' %}">intermediate verbs</a>
+        </div>
+        <div class="verb-box">
+            <a href="{% url 'advanced_verbs' %}">advanced verbs</a>
+        </div>
+    </div>
+</div>    
+
+{% endblock  %}
